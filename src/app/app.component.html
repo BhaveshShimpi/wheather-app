@@ -1,0 +1,66 @@
+<div class="search">
+  <form >
+    <input type="text" placeholder="search city">
+  </form>
+</div>
+
+<div class="container">
+  <div class="upper-data">
+    <img src="../assets/hot.jpg" alt="Image Not Found" *ngIf="14 > 15">
+    <img src="../assets/cold.jpg" alt="Image Not Found" *ngIf="14 <=15">
+
+    <div class="weather-data">
+      <div class="location">Nasik</div>
+      <div class="temprature">{{ 14.40 | number : '1.0-0' }}°C</div>
+    </div>
+  </div>
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/min.jpg" alt="Image Not Found">
+          <span>min</span>
+        </div>
+        <div class="info-block-value">
+          10°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/max" alt="Image Not Found">
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          40°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/humidity" alt="Image Not Found">
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          77%
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/wind.jpg" alt="Image Not Found">
+          <span>Wind</span>
+        </div>
+        <div class="info-block-value">
+          11km/h
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
